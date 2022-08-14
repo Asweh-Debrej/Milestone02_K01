@@ -1,0 +1,48 @@
+main {
+    padding: 2em 4em;
+}
+
+.user {
+    padding: 1em;
+    float:left;
+    width: 20%;
+    text-align: center;
+    background-color: #24A717;
+    border-radius: 1em;
+}
+
+h1 {
+    margin: 0em 0em 1em 0em;
+}
+
+.user img {
+    padding: 1em 0em;
+}
+
+.jenis-sampah-terkumpul {
+    padding: 1em;
+    float:right;
+    width: 80%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.upper-half {
+    display: flex;
+    justify-content: center;
+}
+
+.upper-half section {
+    padding: 3% 8%;
+    background-color: #24A717;
+}
+
+.lower-half {
+    display: flex;
+    justify-content: center;
+}
+
+.lower-half section {
+    padding: 3% 10%;
+}
