@@ -1,5 +1,5 @@
 main {
-    padding: 2em;
+    padding: 2em 4em;
 }
 
 .user {
@@ -9,6 +9,10 @@ main {
     text-align: center;
     background-color: #24A717;
     border-radius: 1em;
+}
+
+h1 {
+    margin: 0em 0em 1em 0em;
 }
 
 .user img {
@@ -22,18 +26,23 @@ main {
     text-align: center;
     display: flex;
     flex-direction: column;
-    
 }
 
 .upper-half {
     display: flex;
     justify-content: center;
-    margin: auto;
+}
+
+.upper-half section {
+    padding: 3% 8%;
+    background-color: #24A717;
 }
 
 .lower-half {
     display: flex;
     justify-content: center;
-    margin: 0% 30%;
+}
 
+.lower-half section {
+    padding: 3% 10%;
 }
