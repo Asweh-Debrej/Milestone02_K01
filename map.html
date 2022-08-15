@@ -7,8 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="stylemap.css" rel="stylesheet" type="text/css">
     <link href="map.css" rel="stylesheet" type="text/css">
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-
+    <script src="https://kit.fontawesome.com/f01e7e6d05.js" crossorigin="anonymous"></script>
     <title>Klinsentif</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -22,37 +21,63 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-
-    <nav>
-        <input type="checkbox" id="check">
-        <label for="check" class="checkbtn">
-            <i class="fas fa-bars"></i>
-        </label>
-        <label class="logo"><a class="logonya" href="index.html">Klinsentif</a></label>
-        <ul>
-            <li><a href=".html">Home</a></li>
-            <li><a href=".html">Profile</a></li>
-            <li><a href=".html">Login</a></li>
-            <li><a href=".html">Register</a></li>
-        </ul>
-    </nav>
-
-</body>  
-
-<div class="judul">
-    <h1 class="judul-header">Peta Lokasi Lembaga Pengelola Sampah</h1>
-</div>
-
-<div class="backmap">
-    <div class="ssmap">
-        <img class="ggmap" src="ssanmap.jpg">
+    <div>
+        <nav>
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="fas fa-bars"></i>
+            </label>
+            <label class="logo"><a class="logonya" href="index.html">Klinsentif</a></label>
+            <ul>
+                <li><a href=".html">Home</a></li>
+                <li><a href=".html">Profile</a></li>
+                <li><a href=".html">Login</a></li>
+                <li><a href=".html">Register</a></li>
+            </ul>
+        </nav>
     </div>
-</div>
+    <div class="top-side">
+        <h1 class="judul-header">Peta Lokasi Lembaga Pengelola Sampah</h1>
+        <div class="backmap">
+            <div class="ssmap">
+                <img class="ggmap" src="./images/ssanmap.jpg">
+            </div>
+        </div>
+    </div>
+    <div class="lower-side">
+        <div class="box">
+            <h1>Atur Penjemputan Sampah</h1>
+            <div class="box-form">
+                <form method="post">
+                    <div class="txt_field">
+                        <label for="lokasi" >Lokasi</label>
+                        <input type="text" id="lokasi" placeholder="Masukkan lokasi penjemputan" required>
+                    </div>
+                    <div class="txt_field">
+                        <label for="username">Nomor Telepon</label>
+                        <input type="text" id="telp" placeholder="Masukkan nomor telepon" required>
+                    </div>
+                    <div class="txt_field">
+                        <label for="jadwal" >Jadwal Penjemputan</label>
+                        <div class="table">
+                            <div class="txt_field table-cell1">
+                                <input type="date"  id="jadwal" holder="Pilih tanggal" required>
+                            </div>
+                            <div class="txt_field table-cell2">
+                                <input type="time"  id="waktu" holder="Pilih waktu" required>
+                            </div>
+                        </div>
+                    </div>
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+        </div>
+    </div>
 
-<div class="footer">
-  <p class="footer-p-left">Tentang</p>
-  <p class="footer-p-left">Kontak</p>
-  <p class="footer-p-left">Cara Memilah</p>
-</div>
-
+    <div class="footer">
+    <p class="footer-p-left">Tentang</p>
+    <p class="footer-p-left">Kontak</p>
+    <p class="footer-p-left">Cara Memilah</p>
+    </div>
+</body>  
 </html>
