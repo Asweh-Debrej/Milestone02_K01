@@ -15,7 +15,7 @@ Anggota Kelompok :
 7. Adrenalin Apprizal        (16521372) -- Page cara memilah
 8. Muhammad Habibi Husni     (16521409) -- Page map
 9. Yobel Dean Christopher    (16521415) -- Page poin
-10.Ariel Jovananda           (16521419) -- Page map
+10. Ariel Jovananda           (16521419) -- Page map
 11. Jennifer Grachel         (16521498) -- Page profile
-12.Fahreza Yunanda           (16521500) -- Page Login
-13.Jason Rivalino            (16521541) -- Page Register
+12. Fahreza Yunanda           (16521500) -- Page Login
+13. Jason Rivalino            (16521541) -- Page Register

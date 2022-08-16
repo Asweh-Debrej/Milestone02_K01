@@ -125,10 +125,6 @@ nav ul li a:hover{
 /* Content */
 main {
     padding: 2em 4em;
-    background-image: url("images/background.jpg");
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
     background-image: url("images/backgroundfix.jpg");
     background-repeat: no-repeat;
     background-position: center center;
@@ -212,6 +208,33 @@ h1 {
     background-color: #4F9C12;
     border-radius: 7%;
 }
+
+@media (max-width: 800px){
+    .content {
+        display: flex;
+        flex-direction: column;
+    }
+    .upper-half {
+        display: flex;
+        flex-direction: column;
+    } 
+    .lower-half {
+        display: flex;
+        flex-direction: column;   
+    }
+    .content {
+        margin: 2em;
+    }
+
+    .user {
+        margin: 1em;
+    }
+
+    .jenis-sampah-terkumpul section {
+        margin: 1em;
+    }
+}
+
 /* content end */
 
 
