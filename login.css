@@ -20,6 +20,7 @@ nav {
     height: 80px;
     width: 100%;
     z-index: 2;
+    background-color: white;
 }
 
 label.logo {
@@ -114,6 +115,10 @@ nav ul li a:hover{
     }
 }
 
+body {
+    background-image: url('images/backgroundfix.jpg');
+    background-size: cover;
+}
 .center{
     position: absolute;
     top: 50%;
