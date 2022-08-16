@@ -1,32 +1,121 @@
-main {
-    padding: 2em 4em;
+/* nav start */
+.navbar-brand {
+    text-decoration: none;
+    color: black;
+    font-size: 145%;
+    font-weight: bold;
+    padding-left: 10px;
 }
+
+.navbar-brand:hover {
+    color: black;
+}
+
+nav {
+    height: 50px;
+}
+
+.nav-link,
+#activePage {
+    margin-right: 10px;
+    background-color: #24a339;
+    border-radius: 15px;
+    font-weight: bold;
+    color: white;
+    font-family: "Inter", sans-serif;
+    filter: drop-shadow(0px 0.7px 0.8px black);
+}
+
+.nav-link:hover,
+#activePage:hover {
+    color: white;
+    background-color: #24a339;
+}
+
+.navbar-toggler{
+    align-items: center;
+}
+
+@media (max-width: 991.98px) {
+    .nav-link,
+    #activePage {
+        border-radius: 0px;
+        padding-left:5px;
+        font-weight: bold;
+        color: white;
+        font-family: "Inter", sans-serif;
+        filter: drop-shadow(0px 0.7px 0.8px black);
+        background-color: #24a339;
+        margin-right: 0px;
+        border-color: #24a339;
+    }
+    .container-fluid{
+        padding-left:0px;
+        padding-right:0px; 
+    }
+}
+/* nav end */
+
+/* Content */
+main {
+    padding: 4em 4em 2em 4em;
+    background-image: url("images/background.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
 
 .user {
     padding: 1em;
-    float:left;
-    width: 20%;
     text-align: center;
     background-color: #24A717;
     border-radius: 1em;
+    flex-basis: 20%;
+    height: 40%;
+    
 }
 
 h1 {
-    margin: 0em 0em 1em 0em;
+    margin: 0em 0em 0.5em 0em;
 }
 
 .user img {
     padding: 1em 0em;
 }
 
+
+.content {
+    background-size: cover;
+    display: flex;
+}
+
 .jenis-sampah-terkumpul {
+    flex-basis: 80%;
     padding: 1em;
-    float:right;
-    width: 80%;
+    margin: 0em 0em 5em 1em;
     text-align: center;
     display: flex;
     flex-direction: column;
+    background-color: #B6CEB4;
+    border-radius: 22px;
 }
+
+.jenis-sampah-terkumpul img {
+    height: 60%;
+    margin: 5% 0%;
+}
+
+.jenis-sampah-terkumpul .weight {
+    background-color: #D9D9D9;
+    border-radius: 16px;
+    height: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0% 0% 10% 0%;
+}
+
 
 .upper-half {
     display: flex;
@@ -34,8 +123,10 @@ h1 {
 }
 
 .upper-half section {
-    padding: 3% 8%;
-    background-color: #24A717;
+    padding: 1% 5%;
+    margin: 2% 3%;
+    background-color: #4F9C12;
+    border-radius: 7%;
 }
 
 .lower-half {
@@ -44,5 +135,20 @@ h1 {
 }
 
 .lower-half section {
-    padding: 3% 10%;
+    padding: 1% 7%;
+    margin: 2% 9%;
+    background-color: #4F9C12;
+    border-radius: 7%;
 }
+/* content end */
+
+
+/* footer */
+#footerNav a {
+    background-color: transparent;
+    border: none;
+    color: black;
+    font-weight: 350;
+}
+
+/* footer end */

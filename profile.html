@@ -7,9 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="stylemilah.css" rel="stylesheet" type="text/css">
     <link href="milah.css" rel="stylesheet" type="text/css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 
-    <title>Klinsentif</title>
+
+    <title>Klinsentif - Profile</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
@@ -17,68 +20,87 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
-    <link rel="stylesheet" href="profile.css">
+
+    
     
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="profile.css">
 </head>
 <body>
-    <nav>
-        <input type="checkbox" id="check">
-        <label for="check" class="checkbtn">
-            <i class="fas fa-bars"></i>
-        </label>
-        <label class="logo"><a class="logonya" href="home.html">Klinsentif</a></label>
-        <ul>
-            <li><a href="home.html">Home</a></li>
-            <li><a href="profle.html">Profile</a></li>
-            <li><a href="peta.html">Peta Lokasi</a></li>
-            <li><a href="penukaran.html">Penukaran Poin</a></li>
-        </ul>
+    <nav class="navbar navbar-expand-lg bg-light fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#" id="namaBrand">Klinsentif</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <div class="navbar-nav ms-auto">
+                    <a href="dashboard.html" class="nav-link">Home</a>
+                    <a href="profile.html" class="nav-link">Profile</a>
+                    <a href="peta.html" class="nav-link">Peta Lokasi</a>
+                    <a href="poin.html" class="nav-link">Penukaran Poin</a>
+                </div>
+            </div>
+        </div>
     </nav>
 
     <main>
-        <h1>Selamat Datang, User</h1>
-        <div class="user">
-            <p><b>Profile</b></p>
-            <img src="images/user_pict.png" alt="User Picture">
-            <p><b>Nama</b></p>
-        </div>
-        <div class="jenis-sampah-terkumpul">
-            <div class="upper-half">
-                <section id="organik">
-                    <p>ORGANIK</p>
-                    <img src="images/organik.png">
-                </section>
-                <section id="plastik">
-                    <p>PLASTIK</p>
-                    <img src="images/plastik.png">
-                </section>
-                <section id="elektronik">
-                    <p>ELEKTRONIK</p>
-                    <img src="images/elektronik.png">
-                </section>
-            </div>
+        <div class="bg">
+            <h1>Selamat Datang, User</h1>
+            <div class="content">
+                <div class="user">
+                    <p><b>Profile</b></p>
+                    <img src="images/user_pict.png" alt="User Picture">
+                    <p><b>Nama</b></p>
+                </div>
+                <div class="jenis-sampah-terkumpul">
+                    <div class="upper-half">
+                        <section id="organik">
+                            <p>ORGANIK</p>
+                            <img src="images/organik.png">
+                            <p class="weight"><span>...  </span>KG</p>
+                        </section>
+                        <section id="plastik">
+                            <p>PLASTIK</p>
+                            <img src="images/plastik.png">
+                            <p class="weight"><span>...  </span>KG</p>
+                        </section>
+                        <section id="elektronik">
+                            <p>ELEKTRONIK</p>
+                            <img src="images/elektronik.png">
+                            <p class="weight"><span>...  </span>KG</p>
+                        </section>
+                    </div>
 
-            <div class="lower-half">
-                <section id="logam">
-                    <p>LOGAM</p>
-                    <img src="images/logam.png">
-                    
-                </section>
-                <section id="kertas">
-                    <p>KERTAS</p>
-                    <img src="images/kertas.png">
-                </section>
+                    <div class="lower-half">
+                        <section id="logam">
+                            <p>LOGAM</p>
+                            <img src="images/logam.png">
+                            <p class="weight"><span>...  </span>KG</p>
+                        </section>
+                        <section id="kertas">
+                            <p>KERTAS</p>
+                            <img src="images/kertas.png">
+                            <p class="weight"><span>...  </span>KG</p>
+                        </section>
+                    </div>
+                </div>
             </div>
-        </div>
+        </div>    
     </main>
 
-    <div class="footer">
-        <p class="footer-p-left">Tentang</p>
-        <p class="footer-p-left">Kontak</p>
-        <p class="footer-p-left">Cara Memilah</p>
-    </div>
+    <footer>
+        <nav class="navbar navbar-expand-lg bg-light fixed-bottom">
+            <div class="container-fluid">
+                <div class="navbar-nav" id="footerNav">
+                    <a href="dashboard.html" class="nav-link">Tentang</a>
+                    <a href="dashboard.html" class="nav-link">Kontak</a>
+                </div>
+            </div>
+        </nav>
+    </footer>
 </body>  
 
 </html>
