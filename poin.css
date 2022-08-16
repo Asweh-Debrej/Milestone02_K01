@@ -1,57 +1,103 @@
 /* nav start */
-.navbar-brand {
-    text-decoration: none;
-    color: black;
-    font-size: 145%;
-    font-weight: bold;
-    padding-left: 10px;
-}
-
-.navbar-brand:hover {
-    color: black;
-}
-
 nav {
-    height: 50px;
+    height: 80px;
+    width: 100%;
+    z-index: 2;
+    text-decoration: none;
+    list-style: none;
 }
 
-.nav-link,
-#activePage {
-    margin-right: 10px;
-    background-color: #24a339;
-    border-radius: 15px;
-    font-weight: bold;
+label.logo {
+    font-size: 35px;
+    padding: 0 100px;
+    line-height: 80px;
+
+}
+
+a.logonya{
+    color: black;
+    text-decoration: none;
+}
+
+nav ul{
+    float: right;
+    margin-right: 3px;
+}
+
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+nav ul li a{
+    color: black;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+nav ul li a:hover{
+    background-color: green;
+    transition: .3s;
     color: white;
-    font-family: "Inter", sans-serif;
-    filter: drop-shadow(0px 0.7px 0.8px black);
 }
 
-.nav-link:hover,
-#activePage:hover {
-    color: white;
-    background-color: #24a339;
+.checkbtn{
+    font-size: 30px;
+    color: black;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    display: none;
+    cursor: pointer;
 }
 
-.navbar-toggler{
-    align-items: center;
+#check{
+    display: none;
 }
 
-@media (max-width: 991.98px) {
-    .nav-link,
-    #activePage {
-        border-radius: 0px;
-        padding-left:5px;
-        font-weight: bold;
-        color: white;
-        font-family: "Inter", sans-serif;
-        filter: drop-shadow(0px 0.7px 0.8px black);
-        background-color: #24a339;
-        margin-right: 0px;
-        border-color: #24a339;
+@media (max-width: 952px){
+    label.logo{
+        font-size: 30px;
+        padding-left: 50px;
     }
-    .container-fluid{
-        padding-left:0px;
-        padding-right:0px; 
+    nav ul li a{
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 952px){
+    .checkbtn{
+        display: block;
+    }
+    ul{
+        position: fixed;
+        width: 50%;
+        height: 100vh;
+        background-color: gray;
+        border-radius: 10px;
+        top: 80px;
+        right: -150%;
+        text-align: center;
+        transition: all .7s;
+        z-index: 2;
+    }
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav ul li a{
+        font-size: 20px;
+    }
+    nav ul li a:hover{
+        background: none;
+    }
+
+    #check:checked ~ ul{
+        right: 0;
     }
 }
 /* nav end */
@@ -76,21 +122,38 @@ main {
     
 }
 
+.logo {
+    color: black;
+    text-decoration: none;
+}
+
+.nav-btn {
+    font-size: 30px;
+    color: black;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    display: none;
+    cursor: pointer;
+}
+
 h1 {
     margin: 0em 0em 0.5em 0em;
 }
 
-.user img {
-    padding: 1em 0em;
-}
-
 .header {
+    position: relative;
+    justify-content: center;
     background-size: cover;
     display: flex;
 }
 
 .header-child {
+    position: relative;
     width: 50%;
+    height: auto;
+    display: flex;
+  	vertical-align: middle;
 }
 
 .header-title {
@@ -103,7 +166,7 @@ h1 {
     display: flex;
 }
 
-.jenis-sampah-terkumpul {
+.reward-list {
     flex-basis: 100%;
     padding: 1em;
     margin: 0em 0em 5em 1em;
@@ -114,12 +177,12 @@ h1 {
     border-radius: 22px;
 }
 
-.jenis-sampah-terkumpul img {
+.reward-list img {
     height: 60%;
     margin: 5% 0%;
 }
 
-.jenis-sampah-terkumpul .weight {
+.reward-list .weight {
     background-color: #d8d8d8;
     border-radius: 16px;
     height: 15%;
@@ -131,20 +194,25 @@ h1 {
 
 .container {
     background-color: #d8d8d8;
+    margin: auto;
     border-radius: 16px;
-    height: 15%;
+    vertical-align: middle;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0% 0% 10% 10%;
+    text-align: center;
+    white-space: nowrap;
+    top: 50%;
+    left: 50%;
+    font-size: 30px;
 }
 
-.reward-list {
+.reward {
     display: flex;
     justify-content: center;
 }
 
-.reward-list section {
+.reward section {
     padding: 1% 4%;
     margin: 2% 3%;
     background-color: #94A3B3;
@@ -170,11 +238,48 @@ h1 {
 
 
 /* footer */
-#footerNav a {
-    background-color: transparent;
-    border: none;
-    color: black;
-    font-weight: 350;
+.footer{
+    bottom: 0px;
 }
 
+.footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    background-color: white;
+    left: 0px;
+    color:black;
+    display: inline;
+    margin-top:10px;
+    padding-top: 10px;
+    padding-left: 0px;
+    text-align: center; 
+    /* border-radius: 11px 11px 0px 0px; */
+}
+
+.footer a{
+    float: left;
+    display: block;
+    color: black;
+    font-weight: bold;
+    text-align: center;
+    padding: 16px 10px;
+    text-decoration: none;
+    margin-top: -10px;
+    margin-left: 30px;
+    font-size: 19px;
+
+    border-radius: 20px;
+}
+
+.footer p{
+    /* padding-bottom: 2px; */
+    text-align: left;
+    display:inline;
+    float: left;
+    font-size: 20px;
+    margin-left: 30px;
+    margin-top: 1px;
+}
 /* footer end */
