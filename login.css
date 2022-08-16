@@ -132,6 +132,11 @@ body {
 .center h1{
     text-align: center;
     padding: 10px 0 40px 0;
+    font-size: 40px;
+    color: black;
+    font-weight: bold;
+    font-family: "Montserrat", sans-serif;
+    padding-top: 20px;
 }
 
 .center form{
