@@ -23,7 +23,7 @@ Anggota Kelompok :
 
 
 Cara Menjalankan Website Klinsentif:
-1. Pengguna diawal dapat membuka website dan melihat berbagai informasi yang ada di Homepage.
+1. Pengguna diawal dapat membuka website dan melihat berbagai informasi yang ada di Homepage. (Keterangan: Buka file dashboard.html)
 2. Untuk melanjutkan penggunaan, pengguna harus melakukan registrasi terlebih dahulu apabila belum memiliki akun pribadi. Jika sudah memiliki akun, pengguna dapat langsung melakukan login.
 3. Pembuatan akun pribadi dapat dilakukan dengan menekan tombol register dan kemudian memasukkan email, username, dan password untuk akun yang akan dibuat.
 4. Jika sudah membuat akun, pengguna dapat langsung login dengan cara memasukkan username dan password yang sudah didaftarkan.
