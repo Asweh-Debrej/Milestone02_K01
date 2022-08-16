@@ -1,280 +1,243 @@
-body{
-    background-image: url("./images/bakcgroundfix.jpg");
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-attachment: fixed;
-    background-size: cover;
-    width: 100%;
-    height: auto;
-}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 
-.top-nav{
-    overflow: hidden;
-    background-color: black;
-    border-radius: 0px 0px 11px 11px;
-}
-.top-nav a{
-    float: left;
-    display: block;
-    color: #552601;
-    font-weight: bold;
-    text-align: center;
-    padding: 16px 20px;
-    text-decoration: none;
-
-    font-size: 19px;
-    border-radius: 20px;
-}
-.top-nav a:hover{
-    background-color: green;
-    color: black;
-}
-
-.top-nav-right{
-    float: right;
-}
-
-*{
-    padding: 0;
+* {
     margin: 0;
+    padding: 0;
     text-decoration: none;
-    box-sizing: border-box ;
+    list-style: none;
+    box-sizing: border-box;
 }
-nav{
-    background: white;
-    height: 70px;
-    width: 100%;
-}
-label.logo{
-    color: black;
-    font-size: 40px;
-    line-height: 65px;
-    padding: 0 90px;
+
+body {
+    height: 100vh;
+    font-family: Montserrat;
     font-weight: bold;
-    margin-left: -40px;
-    text-decoration: none;
-    /* margin-bottom: 10px; */
+    z-index: 1;
 }
+
+nav {
+    height: 80px;
+    width: 100%;
+    z-index: 2;
+    background-color: white;
+}
+
+label.logo {
+    font-size: 35px;
+    padding: 0 100px;
+    line-height: 80px;
+
+}
+
+a.logonya{
+    color: black;
+}
+
 nav ul{
     float: right;
-    margin-right: 10px;
+    margin-right: 20px;
 }
+
 nav ul li{
     display: inline-block;
-    line-height: 70px;
+    line-height: 80px;
     margin: 0 5px;
 }
+
 nav ul li a{
     color: black;
-    font-size: 20px;
+    font-size: 17px;
     padding: 7px 13px;
-    border-radius: 5px;
-    text-transform: uppercase;
+    border-radius: 10px;
 }
-nav ul li a.active, nav ul li a:hover{
-    background: green;
-    transition: 0.5s;
-    color: black;
+
+nav ul li a:hover{
+    background-color: green;
+    transition: .3s;
+    color: white;
 }
-.logonya.active,.logonya:hover{
-    /* background: #9a9088; */
-    /* transition: 0.5s; */
-    background: none;
-    color: black;
-}
+
 .checkbtn{
     font-size: 30px;
     color: black;
     float: right;
     line-height: 80px;
     margin-right: 40px;
-    cursor: pointer;
     display: none;
+    cursor: pointer;
 }
+
 #check{
     display: none;
-
 }
+
 @media (max-width: 952px){
     label.logo{
         font-size: 30px;
         padding-left: 50px;
     }
     nav ul li a{
-        font-size: 15px;
+        font-size: 16px;
     }
 }
-@media (max-width: 858px){
+
+@media (max-width: 952px){
     .checkbtn{
         display: block;
     }
     ul{
-        position: absolute;
-        width: 355px;
-        height: 100%;
-        background: white;
+        position: fixed;
+        width: 50%;
+        height: 100vh;
+        background-color: gray;
+        border-radius: 10px;
         top: 80px;
-        right: -110%;
+        right: -150%;
         text-align: center;
-        transition: all 0.5s;
+        transition: all .7s;
+        z-index: 2;
     }
     nav ul li{
         display: block;
         margin: 50px 0;
-        line-height :30px;
-
+        line-height: 30px;
     }
     nav ul li a{
         font-size: 20px;
     }
-    a:hover, a.active{
+    nav ul li a:hover{
         background: none;
-        color: black;
     }
+
     #check:checked ~ ul{
         right: 0;
-        /* bring to front */
-        z-index: 1;
-        /* stay still */
-        
-
-    }
-    
-
-    }
-    .category{
-        position: relative;
-        display: inline-box;
-    
-        /* on the left side */
-        float: left;
-        /* margin like container */
-        margin: 0px 20px 20px 0px;
-        background-color: green;
-        color: black;
-        font-size: 20px;
-        cursor: pointer;
-        border-radius: 0px 0px 10px 10px;
-    }
-    .category-content{
-        display: none;
-        position: absolute;
-        background-color: green;
-        /* display: none; */
-        min-width: 160px;
-        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-        z-index: 1;
-        border-radius: 0px 0px 10px 10px;
-        left: 30px;
-        top: 134px;
-    }
-    .category-content a{
-        border-radius: 0px 0px 10px 10px;
-        color: green;
-        text-decoration: none;
-        text-align: center;
-        display: block;
-        padding: 20px 100px;
-    }
-    .category-content a:hover{
-        background-color: green;
-        color: black;
-    
-    }
-    .category:hover .category-content{
-        display: block;
-    
-    }
-    .category:hover .category-button{
-        background-color: green;
-        color:green;
-    }
-    
-    
-
-
-@media (max-width: 768px){
-    .footer{
-        position: absolute;
-        bottom: 0;
-        width: 768px;
-        background-color: #552601;
-        left:0;
-        color:white;
-        display: inline;
-        padding-bottom: 1px;
-        padding-top: 5px;
-        text-align: center; 
-        font-size: 10px;
-        /* border-radius: 11px 11px 0px 0px; */
-    }
-    .footer a{
-        color:#ACB996;
-        margin-left: 30px;
-        font-size: 15px;
-        margin-top: 100px;
-        display: none;
-        /* text-align: right; */
-    }
-    
-    .footer p{
-        /* padding-bottom: 2px; */
-        font-size: 10px;
-
-        text-align: left;
-        /* align: center; */
-        display:inline;
-        float: left;
-        font-size: 20px;
-        margin-left: 30px;
-        margin-top: 1px;
-        margin-bottom: 2px;
-    }
-    
-    .inc{
-        text-align: left;
-        float :left;
-        margin-right:30px;
     }
 }
-.logonya{
-    color: black;
+
+body {
+    background-image: url('images/backgroundfix.jpg');
+    background-size: cover;
 }
-.sizing{
-    width: 30px;
-    height:30px;
+.center{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 400px;
+    background: #DBDBDB;
+    border-radius: 25px;
+}
+
+.center h1{
+    text-align: center;
+    padding: 10px 0 40px 0;
+}
+
+.center form{
+    padding: 0 70px;
+    box-sizing: border-box;
+    transform: translateX(-10px);
+}
+
+form .txt_field{
+    position: relative;
+    font-size: 18px;
+    margin: 20px 0;
+}
+
+.txt_field input{
+    width: 100%;
+    height: 20px;
+    border-radius: 20px;
+    border: none;
+    padding: 5px 10px;
+    margin : 5px 0px
+}
+.txt_field label{
+    margin: 0 0 0 10px;
+}
+
+
+input[type="text"]:focus, input[type="password"]:focus{
+    outline: 2px solid green;
+}
+
+input[type="submit"]{
+    width: 100%;
+    height: 50px;
+    margin: 20px 0px 0px 8px;
+    border-radius: 25px;
+    border: 1.7px solid;
+    cursor: pointer;
+    background: #26803e;
+    font-weight: 700;
+    font-size: 18px;
+    color: #DBDBDB;
+}
+
+input[type="submit"]:hover{
+    border-color: #26803e;
+    transition: .4s;
+}
+
+.signup_link{
+    margin: 15px 0;
+    text-align: center;
+    font-size: 16px;
+    color: #666666;
+}
+
+.signup_link a{
+    text-decoration: none;
+    color: green;
+}
+
+.signup_link a:hover{
+    text-decoration: underline;
+}
+
+.footer{
+    bottom: 0;
 }
 
 .footer{
     position: fixed;
     bottom: 0;
     width: 100%;
+    height: 50px;
     background-color: white;
-    left:0;
+    left: 0px;;
     color:black;
     display: inline;
     padding-bottom: 1px;
-    padding-top: 5px;
+    padding-top: 10px;
+    padding-left: 0px;
     text-align: center; 
     /* border-radius: 11px 11px 0px 0px; */
 }
 
 .footer a{
-    color:#ACB996;
+    float: left;
+    display: block;
+    color: black;
+    font-weight: bold;
+    text-align: center;
+    padding: 16px 10px;
+    text-decoration: none;
+    margin-top: -10px;
     margin-left: 30px;
-    font-size: 20px;
-    margin-top: 250px;
-    display: inline;
-    /* text-align: right; */
+    font-size: 19px;
+
+    border-radius: 20px;
 }
 
 .footer p{
     /* padding-bottom: 2px; */
     text-align: left;
-    /* align: center; */
     display:inline;
     float: left;
     font-size: 20px;
+    
     margin-left: 30px;
     margin-top: 1px;
     margin-bottom: 2px;
