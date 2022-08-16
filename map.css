@@ -124,7 +124,10 @@ width: 100%;
     .judul-header{
         font-size: 30px;
         font-weight: bold;
-        margin-right: -130px;
+        margin-right: -5px;
+        text-align: center;
+        
+
     }
 }
 
@@ -152,8 +155,8 @@ width: 100%;
         font-size: 30px;
         font-weight: bold;
         text-align: center;
-        margin-right: -20px;
-
+        margin-right: 100px;
+        
     }
 }
 
