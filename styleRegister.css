@@ -8,7 +8,6 @@ body {
     height: 100%;
 }
 
-
 #box h1 {
     font-size: 40px;
     color: black;
@@ -18,23 +17,9 @@ body {
 
 }
 
-
-
 nav {
     height: 50px;
 }
-
-.nav-link,
-#activePage {
-    margin-right: 10px;
-    background-color: #24a339;
-    border-radius: 15px;
-    font-weight: bold;
-    color: white;
-    font-family: "Inter", sans-serif;
-    filter: drop-shadow(0px 0.7px 0.8px black);
-}
-
 
 #register {
     text-align: left;
@@ -47,7 +32,6 @@ nav {
 
 }
 
-
 #box input {
     margin-bottom: 7px;
     border-radius: 10px;
@@ -57,36 +41,8 @@ nav {
 
 }
 
-.top-nav {
-    overflow: hidden;
-    background-color: black;
-    border-radius: 0px 0px 11px 11px;
-}
-
 #nav-icon {
     font-style: italic;
-}
-
-.top-nav a {
-    float: left;
-    display: block;
-    color: black;
-    font-weight: bold;
-    text-align: center;
-    padding: 16px 20px;
-    text-decoration: none;
-
-    font-size: 19px;
-    border-radius: 20px;
-}
-
-.top-nav a:hover {
-    background-color: #2D9B22;
-    color: black;
-}
-
-.top-nav-right {
-    float: right;
 }
 
 * {
@@ -101,7 +57,6 @@ nav {
     height: 70px;
     width: 100%;
 }
-
 
 nav ul {
     float: right;
@@ -160,8 +115,6 @@ a.logonya {
 #check {
     display: none;
 }
-
-
 
 @media (max-width: 952px) {
     label.logo {
