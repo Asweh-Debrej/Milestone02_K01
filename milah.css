@@ -48,7 +48,6 @@
     transform: translate(-8%,-1%);
     border-radius: 20px 20px 20px 20px;
     image-resolution: cover;
-    cursor: pointer;
     overflow: hidden;
 }
 
@@ -126,7 +125,6 @@ width: 100%;
         position: absolute;
         display: inline-box;
         color: black;
-        /* background-color: aqua;  */
         font-size: 20px;
         /* make center */
         transform: translate(-58%,-59%);
@@ -149,7 +147,6 @@ width: 100%;
         position: absolute;
         display: inline-box;
         color: black;
-        /* background-color: aqua;  */
         font-size: 20px;
         /* make center */
         transform: translate(-50%,-35%);

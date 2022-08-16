@@ -14,6 +14,11 @@ html,body{
 .top-side{
     height: 750px;
     width: 100%;
+    display:flex;
+    justify-content: center;
+    text-align: center;
+    margin-left:auto;
+    margin-right:auto;
 }
 
 .backmap{
@@ -22,27 +27,31 @@ html,body{
     position: absolute;
     display: inline-box;
     color: black;
-    background-color: #1b6214;
-    border-radius: 77px 77px 77px 77px;
     font-size: 20px;
-    /* make center */
     transform: translate(-50%,-80%);
     top: 550px;
     bottom: 580px;
     left: 50%;
     overflow: hidden;
-}
+    display:flex;
+    justify-content: center;
+} 
 
 
 .judul-header{
     font-size: 35px;
     font-weight: bold;
-    text-align: center;
-    margin-right: -30px;
+    margin-right: auto;
+    margin-left:auto;
     color: black;
     margin-top: 2px;
-    white-space: nowrap;
-    padding: 50px;
+    padding-top:45px;
+    display:flex;
+    justify-content:center;
+    text-align: center;
+    padding-left:auto;
+    padding-right:auto;
+    width:100%;
 }
 
 .ggmap{
@@ -52,18 +61,17 @@ html,body{
     position: absolute;
         top: 0;
         bottom: 0;
-    /* margin-left: 15px; */
-    width: 895px;
-    height: 384px;
-    /* stack right */
+    width: 800px;
+    height: 320px;
     float: right;
-    margin-right: 100px;
     left: 125px;
     transform: translate(-8%,-1%);
-    border-radius: 77px 77px 77px 77px;
+    border-radius: 30px;
     image-resolution: cover;
     cursor: pointer;
     overflow: hidden;
+    border: 5px solid #1b6214;
+
 }
 
 .ssmap{
@@ -73,21 +81,6 @@ html,body{
     margin-top: 15px;
 }
 
-.jenis-sampah{
-    font-size: 20px;
-    font-weight: bold;
-    margin-top: 20px;
-    margin-right: 100px;
-    margin-left: 5px;
-    text-align: center;
-    background-color: white;
-    box-shadow: 5px 5px 3px #888888;
-    width: 220px;
-    height: 30px;
-    border-radius: 10px 10px 10px 10px;
-    image-resolution: cover;
-    overflow: hidden;
-}
 
 @keyframes change{
 0%{
@@ -121,48 +114,53 @@ width: 100%;
 
 @media(max-width:768px){
     .backmap{
-        width:768px;
-        height: 800px;
-        position: absolute;
+        width:100%;
+        height: 400px;
         display: inline-box;
         color: white;
-        /* background-color: aqua;  */
         font-size: 20px;
-        /* make center */
         transform: translate(-58%,-59%);
-        /* top: 930px; */
-        /* left: 50%; */
+        top :450px;
         overflow: hidden;
     }
-    .judul-header{
-        font-size: 30px;
-        font-weight: bold;
-        /* text-align: center; */
-        margin-right: -130px;
-}
-
-}
-@media(max-width:600px){
-    .backmap{
-        width: 100%;
-        height: 1450px;
-        position: absolute;
-        display: inline-box;
-        color: white;
-        /* background-color: aqua;  */
-        font-size: 20px;
-        /* make center */
-        transform: translate(-50%,-35%);
-        top: 800px;
-        left: 50%;
-        overflow: hidden;
+    .ggmap{
+        height: 80%;
+        width: 80%;
+        display: flex;
+        justify-content: center;
+        margin-left:right;
+        margin-right:auto;
     }
     .judul-header{
         font-size: 30px;
         font-weight: bold;
         text-align: center;
-        margin-right: -20px;
+    }
+}
 
+@media(max-width:600px){
+    .backmap{
+        width: 100%;
+        height: 350px;   
+        display: inline-box;
+        color: white;
+        font-size: 20px;
+        top: 400px;
+        overflow: hidden;
+    }
+    .ggmap{
+        height: 70%;
+        width: 70%;
+        top :10px;
+        margin-right:auto;
+        margin-left:auto;
+        display:flex;
+        justify-content: center;
+    }
+    .judul-header{
+        font-size: 25px;
+        font-weight: bold;
+        text-align: center;        
     }
 }
 
@@ -249,7 +247,7 @@ input[type="submit"]{
     height: 50px;
     margin: 0px 0px 20px 0px;
     border-radius: 25px;
-    border: 1.7px solid;
+    border: 1.7px solid #26803e;
     cursor: pointer;
     background: #26803e;
     font-weight: 700;
