@@ -6,34 +6,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Klinsentif</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@455;485&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/f01e7e6d05.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="dashboard.css">
 </head>
 
 <body>
     <!-- nav section -->
     <div class="head">
-        <nav class="navbar navbar-expand-lg bg-light fixed-top">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#" id="namaBrand">Klinsentif</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#collapsibleNavbar">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="collapsibleNavbar">
-                    <div class="navbar-nav ms-auto">
-                        <a href="#" class="nav-link active" id="activePage">Home</a>
-                        <a href="" class="nav-link">Peta Lokasi</a>
-                        <a href="" class="nav-link">Register</a>
-                        <a href="" class="nav-link">Login</a>
-
-                    </div>
-                </div>
-            </div>
+        <nav>
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="fa-solid fa-bars"></i>
+            </label>
+            <label class="logo"><a class="logonya" href="#">Klinsentif</a></label>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="map.html">Peta Lokasi</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="register.html">Register</a></li>
+            </ul>
         </nav>
         <!-- nav section end -->
 
@@ -42,9 +35,10 @@
             <div class="content d-flex align-items-center">
                 <div class="isi-content">
                     <h1 class="judul">Klinsentif</h1>
-                    <p class="desc col-6">Klinsentif merupakan suatu inisiatif untuk meminimalisir sampah 
-                        yang dihasilkan Indonesia dengan membantu masyarakat Indonesia mendaur ulang sampah-sampah yang mereka hasilkan.</p>
-                    <a class="btn btn-success btn-sm(sm)" href="#" role="button">Login</a>
+                    <p class="desc col-6">Klinsentif merupakan suatu inisiatif untuk meminimalisir sampah
+                        yang dihasilkan Indonesia dengan membantu masyarakat Indonesia mendaur ulang sampah-sampah yang
+                        mereka hasilkan.</p>
+                    <a class="btn btn-success btn-sm(sm)" href="login.html" role="button">Login</a>
                 </div>
             </div>
         </div>
@@ -55,30 +49,30 @@
             <h1 class="judul-content2">Mengapa daur ulang sampah penting?</h1>
             <div class="image-content2 row row-cols-1 row-cols-md-3 g-4">
                 <div class="col">
-                  <div class="card h-100">
-                    <img src="./images/imgdash1.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title">Mengurangi penumpukan sampah pada PLTA</h5>
+                    <div class="card h-100">
+                        <img src="./images/imgdash1.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Mengurangi penumpukan sampah pada PLTA</h5>
+                        </div>
                     </div>
-                  </div>
                 </div>
                 <div class="col">
-                  <div class="card h-100">
-                    <img src="./images/imgdash2.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title">Menghemat energi yang dikeluarkan suatu pabrik</h5>
+                    <div class="card h-100">
+                        <img src="./images/imgdash2.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Menghemat energi yang dikeluarkan suatu pabrik</h5>
+                        </div>
                     </div>
-                  </div>
                 </div>
                 <div class="col">
-                  <div class="card h-100">
-                    <img src="./images/imgdash3.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title">Turut serta dalam melestarikan lingkungan</h5>
+                    <div class="card h-100">
+                        <img src="./images/imgdash3.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Turut serta dalam melestarikan lingkungan</h5>
+                        </div>
                     </div>
-                  </div>
                 </div>
-              </div>
+            </div>
 
         </div>
         <!-- CONTENT 2 END-->
@@ -119,55 +113,44 @@
             </div>
         </div>
         <!-- CONTENT 3 END-->
-        
-        <!-- Footer -->
-        <footer>
-            <nav class="navbar navbar-expand-lg bg-light fixed-bottom">
-                <div class="container-fluid">
-                    <div class="navbar-nav" id="footerNav">
-                        <a href="" class="nav-link">Tentang</a>
-                        <a href="" class="nav-link">Kontak</a>
+
+        <!-- CONTENT 4 -->
+        <div class="container-content4">
+            <h1 class="kontak">Contact <span style="color:#FFD600">Us</span></h1>
+            <div class="masukan">
+                <form class="form-contact col-6">
+                    <div class="form-email">
+                        <label for="email">Email</label><br />
+                        <input type="email" name="email" placeholder=" Email" />
                     </div>
+                    <div class="form-message">
+                        <label for="message">Pesan</label><br />
+                        <textarea name="message" placeholder="message" rows="4"></textarea>
+                        <br />
+                    </div>
+                    <input type="submit" value="Submit" />
+                </form>
+                
+                <div class="contact-person col-6">
+                    <p class="telepon">Telp : +62-111-0135-0182</p>
+                    <p class="cpemail">Email : klinsentif@gmail.com</p>
                 </div>
-            </nav>
-        </footer>
+            </div>
+
+        </div>
+        <!-- CONTENT 4 END-->
+
+        <!-- Footer -->
+        <div class="footer">
+            <a href="dashboard.html">Tentang</a>
+            <a href="dashboard.html">Kontak</a>
+        </div>
         <!-- Footer end-->
     </div>
     <!-- SCRIPT UNTUK BOOTSTRAP-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
         crossorigin="anonymous"></script>
-</body>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Klinsentif Website</title>
-    </head>
-
-<body>
-<nav>
-    <a href="dashboard.html"></a>
-</nav>
-
-<hr />
-
-<div>
-    <h1>Contact Us</h1>
-    <form>
-        <label for="email">Email</label><br />
-        <input type="email" name="email" placeholder="alamat email"/>
-        <br />
-        <label for="message">Pesan</label><br />
-        <textarea name="message" placeholder="Tulis pesan anda..." rows="4" cols="80"></textarea>
-        <br />
-        <br />
-        <input type="submit" value="Kirim" />
-    </form>
-</div>
-
-<hr>
-<footer style="text-align: center;">
-    <p>Copyright &copy; 2022 Klinsentif.</p>
-</footer>
 </body>
 
 </html>
