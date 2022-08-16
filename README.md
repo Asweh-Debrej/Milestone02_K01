@@ -20,6 +20,8 @@ Anggota Kelompok :
 12. Fahreza Yunanda           (16521500) -- Page Login
 13. Jason Rivalino            (16521541) -- Page Register
 
+
+
 Cara Menjalankan Website Klinsentif:
 1. Pengguna diawal dapat membuka website dan melihat berbagai informasi yang ada di Homepage.
 2. Untuk melanjutkan penggunaan, pengguna harus melakukan registrasi terlebih dahulu apabila belum memiliki akun pribadi. Jika sudah memiliki akun, pengguna dapat langsung melakukan login.
@@ -32,4 +34,4 @@ Cara Menjalankan Website Klinsentif:
 9. Untuk navigator bar Penukaran Poin berfungsi untuk menampilkan barang yang dapat ditukarkan berdasarkan jumlah poin yang sudah dikumpulkan.
 10. Untuk navigator bar Tentang berfungsi untuk mengarahkan kembali pengguna pada trivia mengenai lembaga pengelola sampah Klinsentif.
 11. Untuk navigator bar Kontak berfungsi untuk mengarahkan pengguna pada bagian Contact Us di Homepage.
-12. Untuk navigator bar Cara Memilah berfungsi untuk mengarahkan pengguna pada infografis mengenai cara melakukan pemilahan sampah yang bena
+12. Untuk navigator bar Cara Memilah berfungsi untuk mengarahkan pengguna pada infografis mengenai cara melakukan pemilahan sampah yang benar.
