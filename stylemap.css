@@ -114,9 +114,10 @@ nav ul li a:hover{
     }
 }
 
-body {
+.top-side {
     background-image: url('images/backgroundfix.jpg');
     background-size: cover;
+    margin-right:0px;
 }
 .center{
     position: absolute;
