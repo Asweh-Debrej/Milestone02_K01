@@ -1,4 +1,6 @@
+/* Buat import file font Montserrat */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -12,15 +14,13 @@ body {
     font-family: Montserrat;
     font-weight: bold;
     z-index: 1;
-    text-decoration: none;
 }
 
 nav {
     height: 80px;
     width: 100%;
     z-index: 2;
-    text-decoration: none;
-    list-style: none;
+    background-color: white;
 }
 
 label.logo {
@@ -32,12 +32,11 @@ label.logo {
 
 a.logonya{
     color: black;
-    text-decoration: none;
 }
 
 nav ul{
     float: right;
-    margin-right: 3px;
+    margin-right: 20px;
 }
 
 nav ul li{
@@ -51,7 +50,6 @@ nav ul li a{
     font-size: 17px;
     padding: 7px 13px;
     border-radius: 10px;
-    text-decoration: none;
 }
 
 nav ul li a:hover{
@@ -116,102 +114,89 @@ nav ul li a:hover{
         right: 0;
     }
 }
-/* nav end */
 
-/* Content */
-main {
-    padding: 4em 4em 4em 4em 2em 4em;
-    background-image: url("images/background.jpg");
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-    background-image: url("images/bakcgroundfix.jpg");
-    background-repeat: no-repeat;
-    background-position: center center;
+body {
+    background-image: url('images/backgroundfix.jpg');
     background-size: cover;
 }
+.center{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 400px;
+    background: #DBDBDB;
+    border-radius: 25px;
+}
 
-
-.user {
-    padding: 1em;
+.center h1{
     text-align: center;
-    background-color: #24A717;
-    border-radius: 1em;
-    flex-basis: 20%;
-    height: 40%;
-    
+    padding: 10px 0 40px 0;
 }
 
-h1 {
-    margin: 0em 0em 0.5em 0em;
-    font-family: Montserrat;
-    font-weight:bold;
+.center form{
+    padding: 0 70px;
+    box-sizing: border-box;
+    transform: translateX(-10px);
 }
 
-.user img {
-    padding: 1em 0em;
+form .txt_field{
+    position: relative;
+    font-size: 18px;
+    margin: 20px 0;
+}
+
+.txt_field input{
+    width: 100%;
+    height: 20px;
+    border-radius: 20px;
+    border: none;
+    padding: 5px 10px;
+    margin : 5px 0px
+}
+.txt_field label{
+    margin: 0 0 0 10px;
 }
 
 
-.content {
-    background-size: cover;
-    display: flex;
+input[type="text"]:focus, input[type="password"]:focus{
+    outline: 2px solid green;
 }
 
-.jenis-sampah-terkumpul {
-    flex-basis: 80%;
-    padding: 1em;
-    margin: 0em 0em 5em 1em;
+input[type="submit"]{
+    width: 100%;
+    height: 50px;
+    margin: 20px 0px 0px 8px;
+    border-radius: 25px;
+    border: 1.7px solid;
+    cursor: pointer;
+    background: #26803e;
+    font-weight: 700;
+    font-size: 18px;
+    color: #DBDBDB;
+}
+
+input[type="submit"]:hover{
+    border-color: #26803e;
+    transition: .4s;
+}
+
+.signup_link{
+    margin: 15px 0;
     text-align: center;
-    display: flex;
-    flex-direction: column;
-    background-color: #B6CEB4;
-    border-radius: 22px;
+    font-size: 16px;
+    color: #666666;
 }
 
-.jenis-sampah-terkumpul img {
-    height: 60%;
-    margin: 5% 0%;
+.signup_link a{
+    text-decoration: none;
+    color: green;
 }
 
-.jenis-sampah-terkumpul .weight {
-    background-color: #D9D9D9;
-    border-radius: 16px;
-    height: 15%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0% 0% 10% 0%;
+.signup_link a:hover{
+    text-decoration: underline;
 }
 
-
-.upper-half {
-    display: flex;
-    justify-content: center;
-}
-
-.upper-half section {
-    padding: 1% 5%;
-    margin: 2% 3%;
-    background-color: #4F9C12;
-    border-radius: 7%;
-}
-
-.lower-half {
-    display: flex;
-    justify-content: center;
-}
-
-.lower-half section {
-    padding: 1% 7%;
-    margin: 2% 9%;
-    background-color: #4F9C12;
-    border-radius: 7%;
-}
-/* content end */
-
-
-/* footer */
 .footer{
     bottom: 0;
 }
@@ -258,4 +243,3 @@ h1 {
     margin-top: 1px;
     margin-bottom: 2px;
 }
-/* footer end */

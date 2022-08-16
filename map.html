@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="stylemap.css" rel="stylesheet" type="text/css">
+    <link href="map.css" rel="stylesheet" type="text/css">
+    <script src="https://kit.fontawesome.com/f01e7e6d05.js" crossorigin="anonymous"></script>
+    <title>Klinsentif</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div>
+        <nav>
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="fas fa-bars"></i>
+            </label>
+            <label class="logo"><a class="logonya" href="index.html">Klinsentif</a></label>
+            <ul>
+                <li><a href=".html">Home</a></li>
+                <li><a href=".html">Profile</a></li>
+                <li><a href=".html">Login</a></li>
+                <li><a href=".html">Register</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="top-side">
+        <h1 class="judul-header">Peta Lokasi Lembaga Pengelola Sampah</h1>
+        <div class="backmap">
+            <div class="ssmap">
+                <a href="https://www.google.com/maps/search/lembaga+pengelola+sampah/@-6.8972303,107.5985743,14z"><img class="ggmap" src="./images/ssanmap.jpg"></a>
+            </div>
+        </div>
+    </div>
+    <div class="lower-side">
+        <div class="box">
+            <h1>Atur Penjemputan Sampah</h1>
+            <div class="box-form">
+                <form method="post">
+                    <div class="txt_field">
+                        <label for="lokasi" >Lokasi</label>
+                        <input type="text" id="lokasi" placeholder="Masukkan lokasi penjemputan" required>
+                    </div>
+                    <div class="txt_field">
+                        <label for="username">Nomor Telepon</label>
+                        <input type="text" id="telp" placeholder="Masukkan nomor telepon" required>
+                    </div>
+                    <div class="txt_field">
+                        <label for="jadwal" >Jadwal Penjemputan</label>
+                        <div class="table">
+                            <div class="txt_field table-cell1">
+                                <input type="date"  id="jadwal" holder="Pilih tanggal" required>
+                            </div>
+                            <div class="txt_field table-cell2">
+                                <input type="time"  id="waktu" holder="Pilih waktu" required>
+                            </div>
+                        </div>
+                    </div>
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <a href=".html">Tentang</a>
+        <a href=".html">Kontak</a>
+        <a href=".html">Cara Memilah</a>
+    </div>
+</body>  
+</html>
