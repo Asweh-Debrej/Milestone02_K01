@@ -147,12 +147,13 @@ form .txt_field{
 }
 
 .txt_field input{
-    width: 100%;
-    height: 20px;
+    width: 110%;
+    height: 30px;
     border-radius: 20px;
     border: none;
     padding: 5px 10px;
     margin : 5px 0px
+    
 }
 .txt_field label{
     margin: 0 0 0 10px;
@@ -163,10 +164,10 @@ input[type="text"]:focus, input[type="password"]:focus{
     outline: 2px solid green;
 }
 
-input[type="submit"]{
+.submit{
     width: 100%;
     height: 50px;
-    margin: 20px 0px 0px 8px;
+    margin: 10px 0px 0px 8px;
     border-radius: 25px;
     border: 1.7px solid;
     cursor: pointer;
@@ -176,7 +177,7 @@ input[type="submit"]{
     color: #DBDBDB;
 }
 
-input[type="submit"]:hover{
+.submit:hover{
     border-color: #26803e;
     transition: .4s;
 }
